@@ -1,0 +1,41 @@
+
+
+:root {
+    --appbar: #15161c;
+    --hvr: #80f;
+    --appbar-height: 68px;
+}
+
+appbar {
+    display: block;
+    width: 100%;
+    height: var( --appbar-height );
+    position: fixed;
+    top: 0; left: 0;
+    background: var( --appbar );
+    color: #ccc;
+    user-select: none;
+    z-index: 9;
+}
+
+appbar-home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0px 16px;
+}
+
+appbar-left, appbar-right {
+    display: grid;
+    place-items: center;
+}
+appbar-left > h1:hover, appbar-right h1:hover {
+    cursor: pointer;
+    color: var( --hvr );
+}
+
+appbar-center {
+    display: grid;
+    place-items: center;
+}
