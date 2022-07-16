@@ -3,7 +3,6 @@
 import React from "react";
 import { ReactDOM } from "react";
 import "./css/Drawer.css";
-// import "./scripts/load";
 
 
 function Drawer() {

@@ -1,11 +1,18 @@
 
 
-window.addEventListener( "load", function() {
+window.addEventListener("load", function() {
 
     var drawer = document.querySelector( "drawer" );
     var drawerSwitch = document.querySelector( "appbar-left" );
     var displayDrawer = document.querySelector( "appbar-right" );
     
+    var body = document.querySelector( "drawer" ); 
+    var appbar = document.querySelector( "appbar-center" ); 
+
+    body.addEventListener("click", function() {
+        this.style.background = "#ff9e00";
+        appbar.style.display = "none";
+    });
 
     drawerSwitch.addEventListener( "click", function() {
         switch( drawer.style.width ) {
@@ -27,7 +34,4 @@ window.addEventListener( "load", function() {
             case "none": drawer.style.display = "block";
         }
     } );
-
-} );
-
- 
+});
